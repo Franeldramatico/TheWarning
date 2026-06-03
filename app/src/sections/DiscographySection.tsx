@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
+import { asset } from '@/lib/assets';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,37 +12,37 @@ const albums = [
     title: 'KEEP ME FED',
     year: '2024',
     type: 'ÁLBUM',
-    image: '/images/album-keep-me-fed.jpg',
+    image: asset('/images/album-keep-me-fed.jpg'),
   },
   {
     title: 'ERROR',
     year: '2022',
     type: 'ÁLBUM',
-    image: '/images/album-error.jpg',
+    image: asset('/images/album-error.jpg'),
   },
   {
     title: 'MAYDAY',
     year: '2021',
     type: 'EP',
-    image: '/images/album-mayday.jpg',
+    image: asset('/images/album-mayday.jpg'),
   },
   {
     title: 'QUEEN OF THE MURDER SCENE',
     year: '2018',
     type: 'ÁLBUM',
-    image: '/images/album-queen-murder.jpg',
+    image: asset('/images/album-queen-murder.jpg'),
   },
   {
     title: 'XXI CENTURY BLOOD',
     year: '2017',
     type: 'ÁLBUM',
-    image: '/images/album-xxi-century.jpg',
+    image: asset('/images/album-xxi-century.jpg'),
   },
   {
     title: 'ESCAPE THE MIND',
     year: '2015',
     type: 'EP',
-    image: '/images/album-escape-mind.jpg',
+    image: asset('/images/album-escape-mind.jpg'),
   },
 ];
 

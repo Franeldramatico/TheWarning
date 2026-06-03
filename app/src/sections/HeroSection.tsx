@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Button from '@/components/Button';
+import { asset } from '@/lib/assets';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -163,12 +164,12 @@ export default function HeroSection() {
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/videos/hero-concert.mp4"
+        src={asset('/videos/hero-concert.mp4')}
         autoPlay
         muted
         loop
         playsInline
-        poster="/images/gallery-05.jpg"
+        poster={asset('/images/gallery-05.jpg')}
       />
 
       {/* Dark gradient overlay */}

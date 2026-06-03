@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SectionTitle from '@/components/SectionTitle';
+import { asset } from '@/lib/assets';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,19 +11,19 @@ const members = [
     name: 'DANY VILLARREAL',
     role: 'Voz & Guitarra',
     bio: 'La voz y la furia. Dany lidera el escenario con una presencia imparable, guitarra en mano y corazón en cada nota.',
-    image: '/images/dany-portrait.jpg',
+    image: asset('/images/dany-portrait.jpg'),
   },
   {
     name: 'PAU VILLARREAL',
     role: 'Batería & Voz',
     bio: 'El latido de la banda. Pau combina fuerza y precisión en la batería con una voz que eleva cada canción a otro nivel.',
-    image: '/images/pau-portrait.jpg',
+    image: asset('/images/pau-portrait.jpg'),
   },
   {
     name: 'ALE VILLARREAL',
     role: 'Bajo & Piano',
     bio: 'La profundidad del sonido. Ale ancla la música con líneas de bajo poderosas y una energía en el escenario que desafía su edad.',
-    image: '/images/ale-portrait.jpg',
+    image: asset('/images/ale-portrait.jpg'),
   },
 ];
 

@@ -3,20 +3,21 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
+import { asset } from '@/lib/assets';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const galleryImages = [
-  { src: '/images/gallery-01.jpg', aspect: '2/3' },
-  { src: '/images/gallery-02.jpg', aspect: '3/2' },
-  { src: '/images/gallery-03.jpg', aspect: '2/3' },
-  { src: '/images/gallery-04.jpg', aspect: '1/1' },
-  { src: '/images/gallery-05.jpg', aspect: '2/3' },
-  { src: '/images/gallery-06.jpg', aspect: '1/1' },
-  { src: '/images/gallery-07.jpg', aspect: '1/1' },
-  { src: '/images/gallery-08.jpg', aspect: '2/3' },
-  { src: '/images/gallery-09.jpg', aspect: '1/1' },
-  { src: '/images/gallery-10.jpg', aspect: '2/3' },
+  { src: asset('/images/gallery-01.jpg'), aspect: '2/3' },
+  { src: asset('/images/gallery-02.jpg'), aspect: '3/2' },
+  { src: asset('/images/gallery-03.jpg'), aspect: '2/3' },
+  { src: asset('/images/gallery-04.jpg'), aspect: '1/1' },
+  { src: asset('/images/gallery-05.jpg'), aspect: '2/3' },
+  { src: asset('/images/gallery-06.jpg'), aspect: '1/1' },
+  { src: asset('/images/gallery-07.jpg'), aspect: '1/1' },
+  { src: asset('/images/gallery-08.jpg'), aspect: '2/3' },
+  { src: asset('/images/gallery-09.jpg'), aspect: '1/1' },
+  { src: asset('/images/gallery-10.jpg'), aspect: '2/3' },
 ];
 
 export default function GallerySection() {
